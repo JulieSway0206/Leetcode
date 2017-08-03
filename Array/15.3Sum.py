@@ -52,7 +52,11 @@ class Solution(object):
                     lo += 1
                     hi -= 1
                 elif sum < target:
+                    while(lo < hi and nums[lo] == nums[lo+1]):
+                        lo += 1
                     lo += 1
                 else:
+                    while(lo < hi and nums[hi] == nums[hi-1]):
+                        hi -= 1
                     hi -= 1
         return lst
