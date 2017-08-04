@@ -14,6 +14,13 @@ open records the number of '(', close records the number of ')'.
 Under the condition that open is less than the pair number n, we can add a '(' first. Then we always have two choices:
 1. add one more '(' if open < n
 2. add a ')' if close < open
+                     (
+            /                   \
+           ((                   ()
+        /      \              /
+    (((        (()          ()(
+    /         /    \       /    \
+((()        (()(   (())   ()((  ()()
 """
 class Solution(object):
     def generateParenthesis(self, n):
