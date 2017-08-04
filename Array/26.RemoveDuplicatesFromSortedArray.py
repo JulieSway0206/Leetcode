@@ -46,6 +46,9 @@ i
 01234
 1234545
     i
+---------------------------------------------Complexity-----------------------------------------------
+Time: O(n)
+Space: O(1)
 """
 class Solution(object):
     def removeDuplicates(self, nums):
